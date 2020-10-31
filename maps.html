@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+
+    <title>어몽이비즈 해커톤 7팀</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/cover.css" rel="stylesheet">
+    <link rel="icon" href="./img/ajou.jpg">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35) ),url("./img/street.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: 50%;
+      }
+
+      .mb-auto {
+        margin-bottom: 0!important;
+      }
+
+      .cover-container {
+        max-width: 60rem!important;
+      }
+
+      main {
+        margin:auto;
+      }
+
+      #welcome {
+        font-size: 3em;
+        font-weight: 700;
+      }
+
+    </style>
+
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">AMONG_ebiz_hackathon_team7</h3>
+      
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link" href="./index.html">팀원</a>
+        <a class="nav-link nav-link active" href="./maps.html">찾아오시는길</a>
+        <a class="nav-link" href="https://github.com/ussr1285">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" id="welcome">
+    <p> 지도 </p>
+    <div id="map" style="width:500px;height:400px;"></div>
+  </main>
+  주소 : 경기도 수원시 영통구 원천동 월드컵로 206 다산관 308호
+    
+  <footer></footer>
+</div>
+
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a1d012054910b326672db716daed2ad9&libraries=services,clusterer,drawing"></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(37.2823704, 127.0477464),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+</script>
+
+</body>
+</html>
+
